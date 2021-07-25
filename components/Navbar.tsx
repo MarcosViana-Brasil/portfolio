@@ -21,15 +21,15 @@ const Navitem:FunctionComponent<{
 
 export const Navbar = () => {
 
-  const [activeItem, setActiveItem] = useState<string>('')
+  const [activeItem, setActiveItem] = useState<string>('About')
 
   const { pathname } = useRouter()
 
-  useEffect(() => {
-    if(pathname === '/') setActiveItem('About')
-    if(pathname === '/projects') setActiveItem('Projects')
-    if(pathname === '/resume') setActiveItem('Resume')
-  }, [])
+  // useEffect(() => {
+  //   if(pathname == '/') setActiveItem('About')
+  //   if(pathname == '/projects') setActiveItem('Projects')
+  //   if(pathname == '/resume') setActiveItem('Resume')
+  // }, [])
 
   return (
     <div className="flex justify-between px-5 py-3 my-3">
