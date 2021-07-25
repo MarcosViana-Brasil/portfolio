@@ -19,7 +19,7 @@ const Navitem:FunctionComponent<{
   )
 }
 
-export default function Navbar() {
+export const Navbar = () => {
 
   const [activeItem, setActiveItem] = useState<string>('')
 
